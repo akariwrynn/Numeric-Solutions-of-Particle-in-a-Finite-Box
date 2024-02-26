@@ -12,7 +12,7 @@ import numpy as np
 
 # After entering the required libraries from python, we can continue:
 boxl = 6*10**-9 # You can define the box length
-defined_zero = 0.01  # This is our zero
+eta = 0.01  # This is our zero
 # This is our index, when you decrease this you will find more accurate results. However, one should be careful that there will be more solutions.
 dx = 10.0**-4
 k = 10 # This is our potentials amplitude
@@ -27,7 +27,7 @@ while sigma < search_range:
     # This is our equation. For more information, you can check the paper
     eq = sigma**2+((sigma**2)*(mt.tan(sigma/2)**2))-((mt.pi**2)*k)
     all_results.append(eq)
-    if abs(eq) <= defined_zero:
+    if abs(eq) <= eta:
         results.append(sigma)
         sigma += dx
     else:
