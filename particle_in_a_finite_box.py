@@ -88,7 +88,7 @@ while d < (boxl*2):
 plt.plot(x_array, result_1)
 plt.show()
 plt.plot(x_array, result_2)
-df = pd.DataFrame({'X': x_array, 'k=10,state.1': result_1, 'k=10,state.3': result_2})
+df = pd.DataFrame({'X': x_array, 'k=10,state.3': result_1, 'k=10,state.1': result_2})
 
 df.to_excel('k10kwfs.xlsx', sheet_name='new_sheet_name')
 
