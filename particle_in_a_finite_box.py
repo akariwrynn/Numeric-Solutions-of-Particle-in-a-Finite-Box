@@ -14,7 +14,7 @@ import numpy as np
 boxl = 6*10**-9 # You can define the box length
 eta = 0.01  # This is our zero
 # This is our index, when you decrease this you will find more accurate results. However, one should be careful that there will be more solutions.
-dx = 10.0**-4
+dx = 10.0**-6
 k = 10 # This is our potentials amplitude
 sigma = 0# This is our inital value that we try to solve the equation
 results = []  # This is our results
